@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
 import com.example.examenfinal.model.Carta;
-import com.example.examenfinal.repository.Carta;
+import com.example.examenfinal.repository.CartaRepository;
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 @Service

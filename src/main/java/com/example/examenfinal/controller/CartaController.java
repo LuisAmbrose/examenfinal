@@ -38,9 +38,8 @@ public class CartaController {
         } else {
             try {
                 CartaENcontrada.setNombre(p.getNombre());
-                CartaENcontrada.setApellido(p.getApellido());
-                CartaENcontrada.setCedula(p.getCedula());
-                CartaENcontrada.setCorreo(p.getCorreo());
+                CartaENcontrada.setCategoria(p.getCategoria());
+                CartaENcontrada.setCantidad(p.getCantidad());
                 return new ResponseEntity<>(cartaService.save(p), HttpStatus.OK);
             } catch (DataAccessException e) {
                 return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
